@@ -1,0 +1,118 @@
+body {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+     background: url("https://www.beautifulworld.com/wp-content/uploads/2016/10/PALAWAN-ISLAND.jpg") no-repeat center center;
+    background-size: cover;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(26, 38, 64, 0.6); /* translucent navy tone */
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: none;
+}
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 40px;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+.header-left {
+    color: white;
+    font-size: 48px;
+    font-family: "Audiowide", Arial, Helvetica, sans-serif;
+}
+.header-center a {
+    position: relative;
+    color: white;
+    font-size: 24px;
+    padding-bottom: 4px;
+    text-decoration: none;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    transition: color 0.3s;
+}
+.header-center a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #ffcc00;
+  transition: width 0.3s;
+}
+.header-center a:hover {
+  color: #ffcc00;
+}
+.header-center a:hover::after {
+  width: 100%;
+}
+.display {
+    position: relative;
+    height: 100vh; /* Full Screen */
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* align to left */
+    justify-content: flex-start; /* push content to left */
+    padding: 120px;
+    gap: 40px;
+    }
+.box-design{
+    text-align: left;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    border-radius: 8px;
+}
+.right-side{
+    float: right;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    border-radius: 8px;
+}
+.display h1 {
+    font-family: "Sansation", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 0 0 10px;
+    }
+
+.display p {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 0 20px;
+    }
+footer {
+     width: 100%;
+    height: 450px;
+    color: white;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: none;
+    }
